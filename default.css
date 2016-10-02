@@ -1,100 +1,152 @@
-body {
-  background: #d9ffb3;
+* {
+    border: 1px red dashed;
 }
 
-p{
-  color: #ffffff;
-  font-size: 1.5em;
-    font-family: helvetica;
+html {
+    font-family: sans-serif;
+}
+
+.header {
+    position:fixed;
+    width: 92%;
+    left: 4%;
+    height: 100px;
+    top: 0px;
+    margin: 0;
+    background-color: white;
+    z-index: 2;
+}
+
+.body-wrapper {
+    position: relative;
+    width: 92%;
+    margin-left: 4%;
+    top: 100px;
+}
+
+.title {
+    display: inline-block;
+    padding-top: 30px;
+
 }
 
 h1 {
-  color: white;
-  font-family: helvetica;
-  font-weight: bold;
-  line-height: 40px;
-  font-size: 3em;
+    margin-top: 30px;
+    font-size: 2em;
+    margin: 0;
+}
+
+.nav {
+    float: right;
+    clear: both;
+    font-size: 1em;
+    margin-top: 25px;
+}
+
+.nav ul {
+    padding: 0;
+}
+
+.nav li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
 }
 
 
 
-#container {
-    width: 75%;
-    margin: 30px auto;
-    background: #888888;
-    padding: 30px;
-    border-radius: 2px;
+.me-img {
+    max-width: 200px;
+}
 
+
+
+.projects img {
+    max-width: 400px;
+    border: 3px solid black;
 }
-#header {
-//  text-align: center;
-  clear: both;
-  width: 50%;
-}
-#header-para p {
-  font-size: 1.5em;
-  clear:left;
-  margin-top: 20px;
-  width: 50%;
-  text-align: justify;
-}
-#header:after {  /* allows for margin-top to work after the headshot*/
+
+.projects:after {
     content: "";
     display: block;
     clear: both;
 }
-span {
-  font-weight: bold;
+
+/*body {
+    background: #d9ffb3;
+    font-family: helvetica;
+    border: 0;
+}*/
+
+/*h1 {
+    color: #fff;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 3em;
+}*/
+
+
+/*#header {
+    //  text-align: center;
+    clear: both;
 }
-.portfolio {
-    background: grey;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 2px;
-}
-#navigation {
-    float: right;
-    margin-right: 10px;
-    margin-top: 10px
+
+#header-para p {
+    font-size: 1.5em;
+    clear: left;
+    margin-top: 20px;
+    text-align: justify;
 }
 #nav li {
     display: inline-block;
     vertical-align: middle;
     padding: 0px 10px 0px 0px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bold;
 }
+p {
+    font-size: 1.5em;
+}
+
+
+*/
+
+
+/*span {
+    font-weight: bold;
+}
+
+.portfolio {
+    background: lightgray;
+}
+
+#navigation {
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px
+}
+
+
+
 .center {
-    margin: 0 auto;
+    text-align: center;
 }
-div.portfolio img {
-    width: 100%;
+
+.portfolio img {
+    width: 200px;
     height: 200px;
-    border-radius: 2px;
-}
-#me {
-  margin-right: 30px;
-border-radius: 3px;
-border: #d9ffb3 solid 2px;
-    float: left;
-    height: 130px;
-    width: 130px;
-
-
 }
 
-#about p {
-
+/*a:link {
+    color: #d9ffb3;
+    text-decoration: none;
 }
 
-a:link {
-  color: #d9ffb3;
-  text-decoration: none;
-}
 a:visited {
-  color: #d9ffb3;
+    color: #d9ffb3;
 }
+
 a:hover {
-  color: #d5d5d5;
-}
+    color: #d5d5d5;
+}*/*/*/
