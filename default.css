@@ -115,7 +115,9 @@
      /*background: lightgray;*/
      display: inline-block;
      width: 130px;
+     height: 300px;
      text-align: center;
+     vertical-align: top;
  }
  
  .projects div h4 {
@@ -180,7 +182,9 @@
         
          display: inline-block;
          width: 250px;
+         height: 300px;
          text-align: center;
+         vertical-align: top;
      }
      .projects img {
          width: 120px;
