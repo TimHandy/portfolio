@@ -39,79 +39,86 @@ const projects = [
   {
     title: 'Image Search Abstraction Layer',
     img: '',
-    url: '',
+    url: 'https://image-search-abst-layer.herokuapp.com/',
     description: 'Express Back end project',
     technologies: ['Express', 'Node']
   },
   {
-    title: 'File Metadata Microservice',
+    title: 'File Metadata Microservice - IT\'S BROKEN!!' ,
     img: '',
-    url: '',
+    url: 'https://file-metadata-microsrvc.herokuapp.com/',
     description: 'Express Back end project',
-    technologies: ['React']
+    technologies: ['Node', 'Express']
   },
   {
-    title: 'URL Shortener',
+    title: 'Request Header Microservice',
     img: '',
-    url: '',
+    url: 'https://req-header-service.herokuapp.com/',
     description: 'Express Back end project',
-    technologies: ['React']
+    technologies: ['Node', 'Express']
+  },
+  {
+    title: 'URL Shortener Microservice',
+    img: '',
+    url: 'https://fcc-minurl.herokuapp.com/',
+    description: 'Express Back end project',
+    technologies: ['Node', 'Express']
+  },
+  {
+    title: 'Timestamp Microservice',
+    img: '',
+    url: 'https://mytimestamp-microservice.herokuapp.com/',
+    description: 'Express Back end project',
+    technologies: ['Node', 'Express']
   },
   {
     title: 'Teams Chooser',
     img: '',
-    url: '',
-    description: 'Express Back end project',
-    technologies: ['HTML', 'jQuery']
+    url: 'https://github.com/TimHandy/football-manager',
+    description: 'Selects equally matched teams and tracks scores across the season',
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
     title: 'Simon Game',
     img: 'http://pix.toile-libre.org/upload/original/1475495084.png',
     url: 'http://codepen.io/timhandy/full/BLRzVb/',
     description: 'Simon is an electronic game of memory skill invented in the 1970\'s.',
-    technologies: ['React']
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
     title: 'Pomodoro',
     img: 'http://pix.toile-libre.org/upload/original/1473167257.png',
-    url: '"http://codepen.io/timhandy/full/RGNEbv/',
+    url: 'http://codepen.io/timhandy/full/RGNEbv/',
     description: 'A Pomodoro is a 25 min countdown timer to aid in productivity',
-    technologies: ['PENDING']
-  },
-  {
-    title: 'File Metadata Microservice',
-    img: '',
-    url: '',
-    description: 'Express Back end project',
-    technologies: ['React']
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
     title: 'Calculator',
     img: 'http://pix.toile-libre.org/upload/original/1472821840.png',
     url: 'http://codepen.io/timhandy/full/ORJrEm/',
     description: 'A calculator with all the common functionality you expect of a standard calculator.',
-    technologies: ['PENDING']
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
-    title: 'Twitch TV',
+    title: 'Twitch TV - API CHANGED, NOW BROKEN',
     img: 'http://pix.toile-libre.org/upload/original/1471604448.png',
     url: 'http://codepen.io/timhandy/full/bZJWjq/',
     description: 'An application that pulls data from the Twitch API and allows toggling of visual information',
-    technologies: ['PENDING']
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API']
   },
   {
     title: 'Wikipedia Viewer',
     img: 'http://pix.toile-libre.org/upload/original/1471603263.png',
     url: 'https://codepen.io/timhandy/full/GqPJyr/',
     description: 'A Wikipedia viewer that will make an API call and display the data from the response.',
-    technologies: ['PENDING']
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API']
   },
   {
-    title: 'Local Weather App',
+    title: 'Local Weather App - API CHANGED - NOW BROKEN',
     img: 'http://pix.toile-libre.org/upload/original/1471603166.png',
     url: 'https://codepen.io/timhandy/full/RRJvaq/',
-    description: 'Retrieves your weather based on your browser geolocation data.',
-    technologies: []
+    description: 'Retrieves the local weather based on your browser geolocation data.',
+    technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API']
   },
   {
     title: 'Random Quotes',
@@ -136,7 +143,7 @@ function formatProjects(projectsArr) {
   const formattedProjects = projects.map(project => {
 
     const title = project.title || 'TITLE HERE'
-    const img = project.img || 'https://unsplash.it/200/300/?random'
+    const img = project.img || 'https://unsplash.it/120/120/?random'
     const url = project.url || 'https://github.com/TimHandy'
     const description = project.description || 'DESCRIPTION HERE!'
     const technologies = project.technologies.join(', ') || 'PENDING'
