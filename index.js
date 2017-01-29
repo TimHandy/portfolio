@@ -147,6 +147,14 @@ const projects = [
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API', 'Bootstrap']
   },
   {
+    title: 'Portfolio Page',
+    img: '',
+    url: 'https://timhandy.github.io/portfolio/',
+    repo: 'https://github.com/TimHandy/portfolio',
+    description: 'This portfolio',
+    technologies: ['Javascript', 'HTML', 'CSS']
+  },
+  {
     title: 'Random Quotes',
     img: 'http://pix.toile-libre.org/upload/original/1471603315.png',
     url: 'https://codepen.io/timhandy/full/akGGwJ/',
