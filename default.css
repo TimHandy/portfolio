@@ -96,7 +96,13 @@
  
  .project {
      background: #f5f5f5;
-     margin-bottom: 10px;
+
+     margin: 10px 5px
+ }
+
+ .projects {
+     max-width: 100%;
+     margin: 0 auto;
  }
  
  .projects img {
@@ -115,7 +121,7 @@
      /*background: lightgray;*/
      display: inline-block;
      width: 130px;
-     height: 200px;
+     /*height: 200px;*/
      text-align: center;
      vertical-align: top;
  }
