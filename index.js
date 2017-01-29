@@ -11,14 +11,6 @@ const projects = [
   //   technologies: ['']
   // },
   {
-    title: '',
-    img: '',
-    url: '',
-    repo: '',
-    description: '',
-    technologies: ['']
-  },
-  {
     title: 'React Game of Life - IN PROGRESS',
     img: '',
     url: 'https://github.com/TimHandy/game-of-life',
