@@ -11,20 +11,12 @@ const projects = [
   //   technologies: ['']
   // },
   {
-    title: 'Dungeon Crawler',
+    title: 'React Game of Life - IN PROGRESS',
     img: '',
-    url: '',
-    repo: '',
-    description: 'React Front end project',
-    technologies: ['React', 'ES6', 'Javascript']
-  },
-  {
-    title: 'Game of Life',
-    img: '',
-    url: '',
+    url: 'https://github.com/TimHandy/game-of-life',
     repo: 'https://github.com/TimHandy/game-of-life',
     description: 'React version of Conway\'s Game of Life',
-    technologies: ['React', 'ES6', 'Javascript']
+    technologies: ['React', 'Webpack', 'ES6', 'Javascript']
   },
   {
     title: 'React Recipe Box',
@@ -179,7 +171,8 @@ function formatProjects(projectsArr) {
   const formattedProjects = projects.map(project => {
 
     const title = project.title || 'TITLE HERE!'
-    const img = project.img || 'http://pix.toile-libre.org/upload/thumb/1485678744.png'
+    // const img = project.img || 'http://pix.toile-libre.org/upload/thumb/1485678744.png'
+    const img = project.img || './img/JavaScript-Logo.png'
     const url = project.url || 'https://github.com/TimHandy'
     const description = project.description || 'DESCRIPTION HERE!'
     const technologies = project.technologies.join(', ') || 'PENDING!'

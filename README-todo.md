@@ -4,3 +4,5 @@ TODO: add the timhandy/github.io/projectname urls to the page. I have directly e
 Add a link to the git repos also
 
 TODO: add the googlehomepage copy I did.
+
+TODO: add logos of technologies for a bit of colour.
