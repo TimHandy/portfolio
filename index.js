@@ -11,6 +11,14 @@ const projects = [
   //   technologies: ['']
   // },
   {
+    title: '',
+    img: '',
+    url: '',
+    repo: '',
+    description: '',
+    technologies: ['']
+  },
+  {
     title: 'React Game of Life - IN PROGRESS',
     img: '',
     url: 'https://github.com/TimHandy/game-of-life',
@@ -168,7 +176,7 @@ const projects = [
 function formatProjects(projectsArr) {
   //console.log('addProjects')
 
-  const formattedProjects = projects.map(project => {
+  const newProjectsArr = projects.map(project => {
 
     const title = project.title || 'TITLE HERE!'
     // const img = project.img || 'http://pix.toile-libre.org/upload/thumb/1485678744.png'
@@ -176,19 +184,22 @@ function formatProjects(projectsArr) {
     const url = project.url || 'https://github.com/TimHandy'
     const description = project.description || 'DESCRIPTION HERE!'
     const technologies = project.technologies.join(', ') || 'PENDING!'
+    const repo = project.repo || 'https://github.com/TimHandy'
     
 
     return `<div class="project"> 
               <a href="${url}" target="_blank">
                 <h4>${title}</h4>
                 <img src="${img}"/>
-                <p class="project-description">${description}</p>
-                <p>${technologies}</p>
               </a>
+                <p class="project-description">${description} 
+              </p>
+              <p class="technologies"><a href="${repo}" target="_blank"><i class="fa fa-github"></i></a> ${technologies}</p>
+              
             </div>`
   })
 
-  return formattedProjects
+  return newProjectsArr
 }
 
 
@@ -197,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   // cache the projects div
   const projectsDiv = document.querySelector('.projects')
 
-  // get formatted projects and append to the projects div
+  // get formatted projects and append each to the projects div
   const formattedProjects = formatProjects(projects)
   formattedProjects.map(project => {
     projectsDiv.insertAdjacentHTML( 'beforeend', project )  // apparently better/safer than innerHTML
