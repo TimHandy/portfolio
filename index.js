@@ -15,7 +15,7 @@ const projects = [
     img: '',
     url: 'https://github.com/TimHandy/game-of-life',
     repo: 'https://github.com/TimHandy/game-of-life',
-    description: 'React version of Conway\'s Game of Life',
+    description: 'React version of Conway\'s Game of Life.',
     technologies: ['React', 'Webpack', 'ES6', 'Javascript']
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485679458.png',
     url: 'https://timhandy.github.io/recipe-box/',
     repo: 'https://github.com/TimHandy/recipe-box',
-    description: 'CRUD app to store recipes with persistence in localStorage',
+    description: 'CRUD app to store recipes with persistence in localStorage.',
     technologies: ['React', 'Webpack', 'ES6', 'Javascript', 'React-Bootstrap']
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485677495.png',
     url: 'https://timhandy.github.io/react-camper-leaderboard/',
     repo: 'https://github.com/TimHandy/react-camper-leaderboard',
-    description: 'React Front end project: creates a dynamic table from API data. clicking headings refreshes on different API call',
+    description: 'React Front end project: creates a dynamic table from API data. clicking headings refreshes on different API call.',
     technologies: ['React', 'Webpack', 'API', 'Axios', 'ES6', 'Javascript']
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485677164.png',
     url: 'https://timhandy.github.io/react-markdown-previewer/',
     repo: 'https://github.com/TimHandy/react-markdown-previewer',
-    description: 'React Front end project: live markdown editor',
+    description: 'React Front end project: live markdown editor.',
     technologies: ['React', 'Javascript', 'Webpack', 'ES6', 'Javascript']
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485678414.png',
     url: 'https://image-search-abst-layer.herokuapp.com/',
     repo: '',
-    description: 'Returns paginated image search data in JSON format, and stores recent searches in a database',
+    description: 'Returns paginated image search data in JSON format, and stores recent searches in a database.',
     technologies: ['Express', 'Node', 'MongoDb', 'Javascript']
   },
   {
@@ -63,7 +63,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485678414.png',
     url: 'https://req-header-service.herokuapp.com/',
     repo: '',
-    description: 'Queries the HTTP request header and sends back a JSON response containing the user\'s IP address and OS',
+    description: 'Queries the HTTP request header and sends back a JSON response containing the user\'s IP address and OS.',
     technologies: ['Node', 'Express', 'Javascript']
   },
   {
@@ -71,7 +71,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485678414.png',
     url: 'https://fcc-minurl.herokuapp.com/',
     repo: '',
-    description: 'When using the shortened URL it checks the database and forwards the request to the original URL',
+    description: 'When using the shortened URL it checks the database and forwards the request to the original URL.',
     technologies: ['Node', 'Express', 'MongoDb', 'Javascript']
   },
   {
@@ -79,7 +79,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/thumb/1485678414.png',
     url: 'https://mytimestamp-microservice.herokuapp.com/',
     repo: '',
-    description: 'Pass a string (unix timestamp or natural language) as a URL parameter and it will return json dates',
+    description: 'Pass a string (unix timestamp or natural language) as a URL parameter and it will return json dates.',
     technologies: ['Node', 'Express', 'Javascript']
   },
   {
@@ -87,7 +87,7 @@ const projects = [
     img: '',
     url: 'https://github.com/TimHandy/football-manager',
     repo: '',
-    description: 'Selects equally matched teams and tracks scores across the season',
+    description: 'Selects equally matched teams and tracks scores across the season.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
@@ -103,7 +103,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/original/1473167257.png',
     url: 'http://codepen.io/timhandy/full/RGNEbv/',
     repo: '',
-    description: 'A Pomodoro is a 25 min countdown timer to aid in productivity',
+    description: 'A Pomodoro is a 25 min countdown timer to aid in productivity.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery']
   },
   {
@@ -119,7 +119,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/original/1471604448.png',
     url: 'http://codepen.io/timhandy/full/bZJWjq/',
     repo: '',
-    description: 'An application that pulls data from the Twitch API and allows toggling of visual information',
+    description: 'An application that pulls data from the Twitch API and allows toggling of visual information.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API']
   },
   {
@@ -143,7 +143,7 @@ const projects = [
     img: '',
     url: 'https://timhandy.github.io/portfolio/',
     repo: 'https://github.com/TimHandy/portfolio',
-    description: 'This portfolio',
+    description: 'This portfolio.',
     technologies: ['Javascript', 'HTML', 'CSS']
   },
   {
@@ -159,7 +159,7 @@ const projects = [
     img: 'http://pix.toile-libre.org/upload/original/1471603398.png',
     url: 'https://codepen.io/timhandy/full/eZxGXV/',
     repo: '',
-    description: 'My first webpage; a tribute page to the Extreme Sports star Travis Pastrana',
+    description: 'Project #1: A simple tribute page to the Extreme Sports star Travis Pastrana.',
     technologies: ['HTML', 'CSS', 'Bootstrap']
   }
 ]
