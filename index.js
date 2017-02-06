@@ -168,7 +168,7 @@ const projects = [
 function formatProjects(projectsArr) {
   //console.log('addProjects')
 
-  const newProjectsArr = projects.map(project => {
+  const newProjectsArr = projectsArr.map(project => {
 
     const title = project.title || 'TITLE HERE!'
     // const img = project.img || 'http://pix.toile-libre.org/upload/thumb/1485678744.png'
