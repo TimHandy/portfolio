@@ -89,6 +89,10 @@
      margin-top: 65px;
      top: 200px;
  }
+
+ .about, .services, .clients, .study {
+     line-height: 1.3em;
+ }
  
  .project {
      background: #f8f8f8;
@@ -106,6 +110,8 @@
      max-width: 400px;
      border: 3px solid #65ff65;
      position: relative;
+     width: 120px;
+     height: 120px;
  }
 
  .project-description {
@@ -131,10 +137,6 @@
      text-align: center;
  }
  
- .projects img {
-     width: 120px;
-     height: 120px;
- }
  
  a:link {
      color: #65ff65;
@@ -228,11 +230,13 @@
      .services {
          padding-left: 0;
      }
-     .clients {
+     .clients, .social {
         margin-left: 0;
+        line-height: 1.3em;
 
      }
-     .study {
+     .study, .services {
          padding-left: 0;
+         line-height: 1.3em;
      }
  }

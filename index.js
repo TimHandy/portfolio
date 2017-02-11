@@ -10,10 +10,19 @@ const projects = [
   //   description: '',
   //   technologies: ['']
   // },
+  // },
+  {
+    title: 'Full-stack Voting App - IN PROGRESS',
+    img: '',
+    url: '',
+    repo: 'https://github.com/TimHandy/voting-app',
+    description: 'React voting app with authentication, and backend using Express and MongoDB.',
+    technologies: ['React', 'Express', 'MongoDB', 'Webpack', 'ES6', 'Javascript']
+  },
   {
     title: 'React Game of Life - IN PROGRESS',
     img: '',
-    url: 'https://github.com/TimHandy/game-of-life',
+    url: '',
     repo: 'https://github.com/TimHandy/game-of-life',
     description: 'React version of Conway\'s Game of Life.',
     technologies: ['React', 'Webpack', 'ES6', 'Javascript']
@@ -48,7 +57,7 @@ const projects = [
     url: 'https://image-search-abst-layer.herokuapp.com/',
     repo: '',
     description: 'Returns paginated image search data in JSON format, and stores recent searches in a database.',
-    technologies: ['Express', 'Node', 'MongoDb', 'Javascript']
+    technologies: ['Express', 'Node', 'MongoDB', 'Javascript']
   },
   {
     title: 'File Metadata Microservice<br/> API CHANGED - BROKEN',
@@ -72,7 +81,7 @@ const projects = [
     url: 'https://fcc-minurl.herokuapp.com/',
     repo: '',
     description: 'When using the shortened URL it checks the database and forwards the request to the original URL.',
-    technologies: ['Node', 'Express', 'MongoDb', 'Javascript']
+    technologies: ['Node', 'Express', 'MongoDB', 'Javascript']
   },
   {
     title: 'Timestamp Microservice',
@@ -173,10 +182,10 @@ function formatProjects(projectsArr) {
     const title = project.title || 'TITLE HERE!'
     // const img = project.img || 'http://pix.toile-libre.org/upload/thumb/1485678744.png'
     const img = project.img || './img/JavaScript-Logo.png'
-    const url = project.url || 'https://github.com/TimHandy'
+    const repo = project.repo || 'https://github.com/TimHandy'
+    const url = project.url || repo || 'https://github.com/TimHandy' 
     const description = project.description || 'DESCRIPTION HERE!'
     const technologies = project.technologies.join(', ') || 'PENDING!'
-    const repo = project.repo || 'https://github.com/TimHandy'
     
 
     return `<div class="project"> 
