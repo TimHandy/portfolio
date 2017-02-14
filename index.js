@@ -190,10 +190,10 @@ function formatProjects(projectsArr) {
     const title = project.title || 'TITLE HERE!'
     const img = project.img || './img/JavaScript-Logo.png'
     const repo = project.repo || 'https://github.com/TimHandy'
-    const url = project.url || repo || 'https://github.com/TimHandy' 
+    const url = project.url || repo || 'https://github.com/TimHandy'
     const description = project.description || 'DESCRIPTION HERE!'
     const technologies = project.technologies.join(', ') || 'PENDING!'
-    
+
 
     return `<div class="project"> 
               <a href="${url}" target="_blank">
@@ -212,13 +212,13 @@ function formatProjects(projectsArr) {
 
 
 // on page load...DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function(event) {
+document.addEventListener('DOMContentLoaded', function (event) {
   // cache the projects div
   const projectsDiv = document.querySelector('.projects')
 
   // get formatted projects and append each to the projects div
   const formattedProjects = formatProjects(projects)
   formattedProjects.map(project => {
-    projectsDiv.insertAdjacentHTML( 'beforeend', project )  // apparently better/safer than innerHTML
+    projectsDiv.insertAdjacentHTML('beforeend', project) // apparently better/safer than innerHTML
   })
 })
