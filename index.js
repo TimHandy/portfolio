@@ -1,16 +1,6 @@
 
 
 const projects = [
-  // Template:
-  // {
-  //   title: '',
-  //   img: '',
-  //   url: '',
-  //   repo: '',
-  //   description: '',
-  //   technologies: ['']
-  // },
-  // },
   {
     title: 'Today I Learned',
     img: 'img/today-i-learned.png',
@@ -65,7 +55,7 @@ const projects = [
     url: 'https://image-search-abst-layer.herokuapp.com/',
     repo: 'https://github.com/TimHandy/image-search-abstraction-layer',
     description: 'Returns paginated image search data in JSON format, and stores recent searches in a database.',
-    technologies: ['Express', 'Node', 'MongoDB', 'Javascript']
+    technologies: ['Express', 'Node', 'MongoDB', 'Javascript', 'Heroku']
   },
   {
     title: 'File Metadata Microservice<br/> API CHANGED - BROKEN',
@@ -73,7 +63,7 @@ const projects = [
     url: 'https://file-metadata-microsrvc.herokuapp.com/',
     repo: 'https://github.com/TimHandy/file-metadata-microservice',
     description: 'Choose a file to upload and it will return the file size.',
-    technologies: ['Node', 'Express', 'Javascript']
+    technologies: ['Node', 'Express', 'Javascript', 'Heroku']
   },
   {
     title: 'Request Header Microservice',
@@ -81,7 +71,7 @@ const projects = [
     url: 'https://req-header-service.herokuapp.com/',
     repo: 'https://github.com/TimHandy/request-header-parser-microservice',
     description: 'Queries the HTTP request header and sends back a JSON response containing the user\'s IP address and OS.',
-    technologies: ['Node', 'Express', 'Javascript']
+    technologies: ['Node', 'Express', 'Javascript', 'Heroku']
   },
   {
     title: 'URL Shortener Microservice',
@@ -89,7 +79,7 @@ const projects = [
     url: 'https://fcc-minurl.herokuapp.com/',
     repo: 'https://github.com/TimHandy/url-shortener-microservice',
     description: 'When using the shortened URL it checks the database and forwards the request to the original URL.',
-    technologies: ['Node', 'Express', 'MongoDB', 'Javascript']
+    technologies: ['Node', 'Express', 'MongoDB', 'Javascript', 'Heroku']
   },
   {
     title: 'Timestamp Microservice',
@@ -97,7 +87,7 @@ const projects = [
     url: 'https://mytimestamp-microservice.herokuapp.com/',
     repo: 'https://github.com/TimHandy/timestamp-microservice',
     description: 'Pass a string (unix timestamp or natural language) as a URL parameter and it will return json dates.',
-    technologies: ['Node', 'Express', 'Javascript']
+    technologies: ['Node', 'Express', 'Javascript', 'Heroku']
   },
   {
     title: 'Teams Chooser',
@@ -134,7 +124,7 @@ const projects = [
   {
     title: 'Twitch TV<br/> API CHANGED - BROKEN',
     img: 'img/twitch-tv.png',
-    url: 'http://codepen.io/timhandy/full/bZJWjq/',
+    url: 'https://timhandy.github.io/TwitchTV',
     repo: 'https://github.com/TimHandy/TwitchTV',
     description: 'An application that pulls data from the Twitch API and allows toggling of visual information.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API']
@@ -142,7 +132,7 @@ const projects = [
   {
     title: 'Wikipedia Viewer',
     img: 'img/wikipedia-search.png',
-    url: 'https://codepen.io/timhandy/full/GqPJyr/',
+    url: 'https://timhandy.github.io/wikipedia_viewer/',
     repo: 'https://github.com/TimHandy/wikipedia_viewer',
     description: 'A Wikipedia viewer that will make an API call and display the data from the response.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API', 'Bootstrap']
@@ -150,7 +140,7 @@ const projects = [
   {
     title: 'Local Weather App<br/> API CHANGED - BROKEN',
     img: 'img/weather.png',
-    url: 'https://codepen.io/timhandy/full/RRJvaq/',
+    url: 'https://timhandy.github.io/local_weather/',
     repo: 'https://github.com/TimHandy/local_weather',
     description: 'Retrieves the local weather based on your browser geolocation data.',
     technologies: ['HMTL', 'CSS', 'Javascript', 'jQuery', 'API', 'Bootstrap']
@@ -166,7 +156,7 @@ const projects = [
   {
     title: 'Random Quotes',
     img: 'img/random-quote.png',
-    url: 'https://codepen.io/timhandy/full/akGGwJ/',
+    url: 'https://timhandy.github.io/random_quote_generator/',
     repo: 'https://github.com/TimHandy/random_quote_generator',
     description: 'Provides a random quote on each button press and enable sending a Tweet of the quote.',
     technologies: ['Javascript', 'HTML', 'CSS', 'Bootstrap']
@@ -174,7 +164,7 @@ const projects = [
   {
     title: 'Tribute Page',
     img: 'img/travis.png',
-    url: 'https://codepen.io/timhandy/full/eZxGXV/',
+    url: 'https://timhandy.github.io/tribute_page/',
     repo: 'https://github.com/TimHandy/tribute_page',
     description: 'A simple tribute page to the extreme sports star Travis Pastrana.',
     technologies: ['HTML', 'CSS', 'Bootstrap']
