@@ -160,7 +160,7 @@ const projects = [
     img: 'https://avatars2.githubusercontent.com/u/13509104?v=3&s=460',
     url: 'https://timhandy.github.io/portfolio/',
     repo: 'https://github.com/TimHandy/portfolio',
-    description: 'This portfolio.',
+    description: 'This portfolio. Responsive theme made with vanilla JS, no framework.',
     technologies: ['Javascript', 'HTML', 'CSS']
   },
   {
@@ -176,7 +176,7 @@ const projects = [
     img: 'img/travis.png',
     url: 'https://codepen.io/timhandy/full/eZxGXV/',
     repo: 'https://github.com/TimHandy/tribute_page',
-    description: 'Project #1: A simple tribute page to the Extreme Sports star Travis Pastrana.',
+    description: 'A simple tribute page to the extreme sports star Travis Pastrana.',
     technologies: ['HTML', 'CSS', 'Bootstrap']
   },
   {
