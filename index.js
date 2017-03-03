@@ -1,6 +1,14 @@
 
 
 const projects = [
+   {
+    title: 'HTML Template to React',
+    img: 'img/template-to-react.png',
+    url: '',
+    repo: 'https://github.com/TimHandy/html-template-to-react',
+    description: 'Converted a standard HTML template to React Components',
+    technologies: ['React', 'HTML', 'Webpack', 'Express']
+  },
   {
     title: 'Today I Learned',
     img: 'img/today-i-learned.png',
