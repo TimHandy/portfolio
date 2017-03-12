@@ -18,22 +18,6 @@ const projects = [
     technologies: ['React', 'Google Sheets', 'Webpack', 'ES6', 'Javascript']
   },
   {
-    title: 'Full-stack Voting App - IN PROGRESS',
-    img: '',
-    url: '',
-    repo: 'https://github.com/TimHandy/voting-app',
-    description: 'React voting app with authentication, and backend using Express and MongoDB.',
-    technologies: ['React', 'Express', 'MongoDB', 'Webpack', 'ES6', 'Javascript']
-  },
-  {
-    title: 'React Game of Life - IN PROGRESS',
-    img: '',
-    url: '',
-    repo: 'https://github.com/TimHandy/game-of-life',
-    description: 'React version of Conway\'s Game of Life.',
-    technologies: ['React', 'Webpack', 'ES6', 'Javascript']
-  },
-  {
     title: 'React Recipe Box',
     img: 'img/recipebox.png',
     url: 'https://timhandy.github.io/recipe-box/',
