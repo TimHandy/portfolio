@@ -1,242 +1,237 @@
  * {
-     /*border: 1px red dashed;*/
+   /*border: 1px red dashed;*/
  }
 
 .body-wrapper {
-     /*position: relative;*/
-     max-width: 1100px;
-     margin: 0px 10px auto;
+
+   max-width: 1100px;
+   margin: 0px 10px auto;
  }
  
  h1 {
-     margin-top: 10px;
-     margin-bottom: 10px;
-     padding-left: 0px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding-left: 0px;
  }
  
  h2 {
-     margin-bottom: 20px;
-     margin-top: 30px;
+   margin-bottom: 20px;
+   margin-top: 30px;
  }
  
  .header {
-     position: fixed;
-     width: 100%;
-     padding-left: 10px;
-     padding-right: 20px;
-     padding-bottom: 15px;
-     height: 50px;
-     top: 0px;
-     margin: 0;
-     background-color: white;
-     z-index: 2;
+   position: fixed;
+   width: 100%;
+   padding-left: 10px;
+   padding-right: 20px;
+   padding-bottom: 15px;
+   height: 50px;
+   top: 0px;
+   margin: 0;
+   background-color: white;
+   z-index: 2;
  }
- 
- 
- 
- /*.title {
-     position: fixed;
-     top: 0px;
- }*/
- /*.title h1 {
-     display: inline-block;
-
-}*/
- /*h1 {
-    margin-top: 30px;
-    font-size: 2em;
-    margin: 0;
-}*/
- 
+  
  .nav {
-     text-align: left;
-     clear: both;
-     margin-top: 25px;
-     font-size: 2em;
+   text-align: left;
+   clear: both;
+   margin-top: 25px;
+   font-size: 2em;
  }
  
  .nav ul {
-     padding: 0;
-     margin: 10px 0px 10px 0px;
+   padding: 0;
+   margin: 10px 0px 10px 0px;
  }
  
  .nav li {
-     display: inline;
-     vertical-align: middle;
+   display: inline;
+   vertical-align: middle;
  }
  
  .me-img {
-     max-width: 150px;
-     float: left;
-     margin-right: 10px;
-     margin-bottom: 10px;
-     border: 3px solid #65ff65;
+   max-width: 150px;
+   float: left;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   border: 3px solid #65ff65;
  }
  
  .about:after {
-     content: "";
-     display: block;
-     clear: both;
+   content: "";
+   display: block;
+   clear: both;
  }
  
  .about {
-     clear: left;
+   clear: left;
  }
  
  .me h2 {
-     font-size: 1.2em;
-     /*padding: 0;*/
-     margin-top: 65px;
-     top: 200px;
+   font-size: 1.2em;
+   margin-top: 65px;
+   top: 200px;
  }
 
  .about, .services, .clients, .study {
-     line-height: 1.3em;
+   line-height: 1.3em;
  }
  
  .project {
-     background: #f8f8f8;
-     margin: 10px 1%;
-     padding: 0px 1%;
+   background: #f8f8f8;
+   margin: 10px 1%;
+   padding: 0px 1%;
  }
 
  .projects {
-     max-width: 100%;
-     margin: 0 auto;
-     padding: 0;
+   max-width: 100%;
+   margin: 0 auto;
+   padding: 0;
  }
  
  .projects img {
-     max-width: 400px;
-     border: 3px solid #65ff65;
-     position: relative;
-     width: 120px;
-     height: 120px;
+   max-width: 50%;
+   border: 3px solid #65ff65;
  }
 
  .project-description {
-     display: none;
+   display: none;
  }
  
  .projects:after {
-     content: "";
-     display: block;
-     clear: both;
+   content: "";
+   display: block;
+   clear: both;
  }
  
  .projects div {
-     /*background: lightgray;*/
-     display: inline-block;
-     width: 130px;
-     /*height: 200px;*/
-     text-align: center;
-     vertical-align: top;
+   display: inline-block;
+   width: 90%;
+   text-align: center;
+   vertical-align: top;
  }
  
  .projects div h4 {
-     text-align: center;
+   text-align: center;
  }
  
- 
  a:link {
-     color: #65ff65;
-     text-decoration: none;
+   color: #65ff65;
+   text-decoration: none;
  }
  
  a:visited {
-     color: #65ff65;
+   color: #65ff65;
  }
  
  a:hover {
-     color: #d5d5d5;
+   color: #d5d5d5;
  }
  
  .projects a:link,
  .projects a:visited {
-     color: #7b7b7b;
+   color: #7b7b7b;
  }
  
  .projects a:hover {
-     color: #65ff65;
+   color: #65ff65;
  }
  
  
- @media screen and (min-width: 768px) {
-     .body-wrapper {
-        margin: 0 auto;
-        top: 160px;
-        max-width: 1050px;
-        padding-left: 50px;
-     }
-     .header {
-         height: 80px;
-         margin-left: 0px;
-         padding-top: 50px;
-         padding-left: 0;
-     }
-     .me {
-         margin-top:160px;
-     }
-     /*.title {
-         position: fixed;
-         top: 25px;
-     }*/
-     .about {
-         clear: none;
-     }
-     .projects {
-         clear: both;
-     }
-     .projects div {
-        
-         display: inline-block;
-         width: 21%;
-         text-align: center;
-         vertical-align: top;
-     }
-     .projects img {
-         width: 120px;
-         height: 120px;
-     }
-     .project {
+ @media screen and (min-width: 400px) {
+   .body-wrapper {
+    margin: 0 auto;
+    top: 160px;
+    max-width: 1050px;
+    padding-left: 50px;
+   }
+   .header {
+     height: 80px;
+     margin-left: 0px;
+     padding-top: 50px;
+     padding-left: 0;
+   }
+   .me {
+     margin-top:160px;
+   }
 
-         margin-left: 0;
-         margin-bottom: 5px;
-         padding-bottom: 20px;
-     }
-     .project-description {
-         display: block;
-         padding-left: 5px;
-         padding-right: 5px;
-         text-align: left;
-     }
-     .technologies {
-         color: #7b7b7b;
-         text-align: left;
-                  padding-left: 5px;
-         padding-right: 5px;
-     }
-     /*.box h2 {
-         margin: 0;
-     }*/
-     .col-2 {
-         display: inline-block;
-         width: 44%;
-         vertical-align: top;
-         padding-left: 3%;
-         padding-right: 3%;
-         text-align: justify;
-     }
-     .services {
-         padding-left: 0;
-     }
-     .clients, .social {
-        margin-left: 0;
-        line-height: 1.3em;
+   .about {
+     clear: none;
+   }
+   .projects {
+     clear: both;
+    
+   }
+   .projects div {
+    
+     display: inline-block;
+     text-align: center;
+     vertical-align: top;
+   }
+   .projects img {
+    max-width: 130px;
+    width: 100%         
+   }
+   .project {
 
-     }
-     .study, .services {
-         padding-left: 0;
-         line-height: 1.3em;
-     }
+     margin-left: 0;
+     margin-bottom: 5px;
+     padding-bottom: 20px;
+     max-width: 46%;
+   }
+   .project-description {
+     display: block;
+     padding-left: 5px;
+     padding-right: 5px;
+     text-align: left;
+   }
+   .technologies {
+     color: #7b7b7b;
+     text-align: left;
+          padding-left: 5px;
+     padding-right: 5px;
+   }
+
+   .col-2 {
+     display: inline-block;
+     width: 44%;
+     vertical-align: top;
+     padding-left: 3%;
+     padding-right: 3%;
+     text-align: justify;
+   }
+   .services {
+     padding-left: 0;
+   }
+   .clients, .social {
+    margin-left: 0;
+    line-height: 1.3em;
+
+   }
+   .study, .services {
+     padding-left: 0;
+     line-height: 1.3em;
+   }
+ }
+
+
+ @media screen and (min-width: 400px) {
+   .projects div {
+     width: 46%;
+   }
+ }
+
+
+
+  @media screen and (min-width: 750px) {
+   .projects div {
+     width: 30%;
+   }
+ }
+
+
+   @media screen and (min-width: 1000px) {
+   .projects div {
+     width: 22%;
+   }
  }
