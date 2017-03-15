@@ -172,7 +172,7 @@ const projects = [
 ]
 
 
-function formatProjects(projectsArr) {
+const formatProjects = (projectsArr) => {
   //console.log('addProjects')
 
   const arrOfFormattedProjectDivs = projectsArr.map(project => {
