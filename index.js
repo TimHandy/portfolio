@@ -175,7 +175,7 @@ const projects = [
 function formatProjects(projectsArr) {
   //console.log('addProjects')
 
-  const newProjectsArr = projectsArr.map(project => {
+  const arrOfFormattedProjectDivs = projectsArr.map(project => {
 
     const title = project.title || 'TITLE HERE!'
     const img = project.img || './img/JavaScript-Logo.png'
@@ -197,18 +197,18 @@ function formatProjects(projectsArr) {
             </div>`
   })
 
-  return newProjectsArr
+  return arrOfFormattedProjectDivs
 }
 
-const insertProjects = (event) => {  // can I extract this function any more?
+const insertProjects = () => {  
   // cache the projects div
   const projectsDiv = document.querySelector('.projects')
 
   // get formatted projects 
-  const formattedProjects = formatProjects(projects)  // this is a global var but not passed into insertProjects... can't do that becauase of the rererence to it in the event listener?
+  const formattedProjects = formatProjects(projects)  
 
   // append each formatted project to the projects div
-  formattedProjects.map(project => {
+  formattedProjects.forEach(project => {
     projectsDiv.insertAdjacentHTML('beforeend', project) // apparently better/safer than innerHTML
   })
 }

@@ -18,6 +18,8 @@
    margin-bottom: 20px;
    margin-top: 30px;
  }
+
+
  
  .header {
    position: fixed;
@@ -135,6 +137,11 @@
  
  .projects a:hover {
    color: #65ff65;
+ }
+
+ .services h2, .clients h2, .social h2, .study h2 {
+    background: #eeeeee;
+    padding: 8px
  }
  
  
