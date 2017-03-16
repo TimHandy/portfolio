@@ -1,66 +1,98 @@
  * {
    /*border: 1px red dashed;*/
  }
-
-.body-wrapper {
-
-   max-width: 1100px;
-   margin: 0px 10px auto;
+ 
+ .wrapper {
+   width: 95%;
+   margin: 0 auto;
  }
  
- h1 {
-   margin-top: 10px;
-   margin-bottom: 10px;
-   padding-left: 0px;
+ .my-name {
+   float: left;
  }
  
  h2 {
    margin-bottom: 20px;
    margin-top: 30px;
  }
-
-
  
  .header {
-   position: fixed;
    width: 100%;
-   padding-left: 10px;
-   padding-right: 20px;
-   padding-bottom: 15px;
-   height: 50px;
+   max-width: 1050px;
+   /*padding: 15px;*/
+   /*margin: 15px;*/
+   /*height: 200px;*/
    top: 0px;
-   margin: 0;
    background-color: white;
-   z-index: 2;
- }
-  
- .nav {
-   text-align: left;
-   clear: both;
-   margin-top: 25px;
-   font-size: 2em;
+   /*z-index: 2;*/
+   border-bottom: 3px #65ff65 solid;
+   padding-bottom: 10px;
  }
  
- .nav ul {
+ .burger-nav {
+   display: block;
+   width: 100%;
+   height: 80px;
+   /*float: right;*/
+   background: url(img/burger.png) no-repeat 100% center;
+   /*background-size: 25%;*/
+   cursor: pointer;
+ }
+ 
+ nav {
+   /*display: none;*/
+   /*float: left;
+   clear: both;*/
+   width: 100%;
+   margin: 0;
    padding: 0;
-   margin: 10px 0px 10px 0px;
+ }
+ /* hide nav heading text - for screen readers*/
+ 
+ nav h2 {
+   line-height: 0;
+   margin: 0;
+   text-indent: -10000px;
  }
  
- .nav li {
-   display: inline;
-   vertical-align: middle;
+ nav ul {
+   padding: 0;
+   overflow: hidden;
+   /*height: 0;*/
+ }
+ 
+ nav ul.hidden {
+   height: auto;
+ }
+ 
+ nav li {
+   list-style-type: none;
+ }
+ 
+ nav li a {
+   display: block;
+   border-top: 1px grey solid;
+   background-color: white;
+   padding: 10px;
+   font-weight: bold;
+   font-size: 1.5em;
+ }
+ 
+ nav li:last-of-type {
+   border-bottom: 1px grey solid;
  }
  
  .me-img {
    max-width: 150px;
    float: left;
+   clear: both;
    margin-right: 10px;
    margin-bottom: 10px;
    border: 3px solid #65ff65;
  }
  
  .about:after {
-   content: "";
+   content: " ";
    display: block;
    clear: both;
  }
@@ -71,31 +103,39 @@
  
  .me h2 {
    font-size: 1.2em;
-   margin-top: 65px;
-   top: 200px;
+   /*top: 200px;*/
  }
-
- .about, .services, .clients, .study {
+ 
+ .about,
+ .services,
+ .clients,
+ .study {
    line-height: 1.3em;
  }
  
  .project {
    background: #f8f8f8;
-   margin: 10px 1%;
-   padding: 0px 1%;
+   margin: 5px 5px 5px 5px;
+   /*margin: 10px 5px;*/
+   padding: 0px 5px;
  }
-
+ 
  .projects {
-   max-width: 100%;
+   width: 100%;
    margin: 0 auto;
    padding: 0;
+ }
+ 
+ .projects h2 {
+   border-bottom: 3px #65ff65 solid;
+   padding-bottom: 10px;
  }
  
  .projects img {
    max-width: 50%;
    border: 3px solid #65ff65;
  }
-
+ 
  .project-description {
    display: none;
  }
@@ -138,53 +178,84 @@
  .projects a:hover {
    color: #65ff65;
  }
-
- .services h2, .clients h2, .social h2, .study h2 {
-    background: #eeeeee;
-    padding: 8px
+ 
+ .services h2,
+ .clients h2,
+ .social h2,
+ .study h2 {
+   /*background: #eeeeee;*/
+   border-bottom: 3px #65ff65 solid;
+   padding: 8px
  }
  
+ .hidden {
+   display: none
+ }
+ /* ##############  MEDIA QUERIES #####################*/
  
- @media screen and (min-width: 400px) {
-   .body-wrapper {
-    margin: 0 auto;
-    top: 160px;
-    max-width: 1050px;
-    padding-left: 50px;
+ @media screen and (min-width: 600px) {
+   .wrapper {
+     max-width: 1050px;
+     margin: 0 auto;
+     top: 160px;
+     /*padding-left: 50px;*/
    }
    .header {
-     height: 80px;
+     /*height: 80px;*/
+     /*width: 95%;*/
      margin-left: 0px;
-     padding-top: 50px;
+     padding-top: 30px;
      padding-left: 0;
    }
+   .header:after {
+     content: " ";
+     display: block;
+     clear: both;
+   }
    .me {
-     margin-top:160px;
+     /*margin-top:160px;*/
+   }
+   nav {
+     /*float: right;*/
+   }
+   nav ul {
+
    }
 
+   nav ul li {
+     float: right;
+     display: inline;
+   }
+   nav li:last-of-type {
+     border: none;
+   }
+   nav li a {
+     border: none;
+     font-size: 1em;
+   }
+   .burger-nav {
+     display: none;
+   }
    .about {
      clear: none;
    }
    .projects {
      clear: both;
-    
+     width: 100%;
    }
    .projects div {
-    
      display: inline-block;
      text-align: center;
      vertical-align: top;
+     width: 44%;
    }
    .projects img {
-    max-width: 130px;
-    width: 100%         
+     max-width: 130px;
+     width: 100%;
    }
    .project {
-
-     margin-left: 0;
-     margin-bottom: 5px;
      padding-bottom: 20px;
-     max-width: 46%;
+     width: 100%;
    }
    .project-description {
      display: block;
@@ -195,10 +266,9 @@
    .technologies {
      color: #7b7b7b;
      text-align: left;
-          padding-left: 5px;
+     padding-left: 5px;
      padding-right: 5px;
    }
-
    .col-2 {
      display: inline-block;
      width: 44%;
@@ -210,27 +280,18 @@
    .services {
      padding-left: 0;
    }
-   .clients, .social {
-    margin-left: 0;
-    line-height: 1.3em;
-
+   .clients,
+   .social {
+     margin-left: 0;
+     line-height: 1.3em;
    }
-   .study, .services {
+   .study,
+   .services {
      padding-left: 0;
      line-height: 1.3em;
    }
  }
-
-
- @media screen and (min-width: 400px) {
-   .projects div {
-     width: 46%;
-   }
- }
-
-
-
-  @media screen and (min-width: 750px) {
+ @media screen and (min-width: 750px) {
    .projects div {
      width: 30%;
    }

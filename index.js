@@ -216,3 +216,21 @@ const insertProjects = () => {
 
 // on page load...DOMContentLoaded
 document.addEventListener('DOMContentLoaded', insertProjects)
+
+
+// burger-nav functionality
+
+document.addEventListener("DOMContentLoaded", function(event) {
+
+  const burgerNav = document.querySelector('.burger-nav')
+  const nav = document.querySelector('nav')
+
+  burgerNav.addEventListener("click", () => {
+    console.log('clicked')
+    nav.classList.toggle("hidden")
+  });
+
+});
+
+
+
