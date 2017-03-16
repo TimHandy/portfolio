@@ -254,4 +254,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     nav.classList.toggle("hidden")
   });
 
+  /* ############## end Burger-nav functionality ############## */
+
 });
