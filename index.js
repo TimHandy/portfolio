@@ -1,7 +1,4 @@
-
-
-const projects = [
-   {
+const projects = [{
     title: 'HTML Template to React',
     img: 'img/template-to-react.png',
     url: '',
@@ -200,12 +197,12 @@ const formatProjects = (projectsArr) => {
   return arrOfFormattedProjectDivs
 }
 
-const insertProjects = () => {  
+const insertProjects = () => {
   // cache the projects div
   const projectsDiv = document.querySelector('.projects')
 
   // get formatted projects 
-  const formattedProjects = formatProjects(projects)  
+  const formattedProjects = formatProjects(projects)
 
   // append each formatted project to the projects div
   formattedProjects.forEach(project => {
@@ -218,19 +215,43 @@ const insertProjects = () => {
 document.addEventListener('DOMContentLoaded', insertProjects)
 
 
-// burger-nav functionality
 
-document.addEventListener("DOMContentLoaded", function(event) {
+/* ############## Burger-nav functionality ############## */
 
+const getViewportWidth = () => {
+  const width = window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+
+  return width
+}
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+  // cache DOM
   const burgerNav = document.querySelector('.burger-nav')
   const nav = document.querySelector('nav')
 
+  const addRemoveHiddenClass = () => {
+
+    const width = getViewportWidth()
+
+    if (width > 600) {
+      nav.classList.remove("hidden")
+    } else {
+      nav.classList.add("hidden")
+    }
+  }
+
+  // check whether to remove .hidden class on nav menu at first load for large viewports
+  addRemoveHiddenClass()
+
+  // handle window size change nav menu visibility
+  window.addEventListener("resize", addRemoveHiddenClass);
+
+  // handle burger menu icon clicks
   burgerNav.addEventListener("click", () => {
-    console.log('clicked')
     nav.classList.toggle("hidden")
   });
 
 });
-
-
-

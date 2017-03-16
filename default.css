@@ -187,6 +187,18 @@
    border-bottom: 3px #65ff65 solid;
    padding: 8px
  }
+
+.links ul {
+  padding: 0;
+}
+ .links li {
+   list-style-type: none;
+   display: inline-block;
+   font-size: 2em;
+   /*letter-spacing: 20px;*/
+   width: 50px;
+
+ }
  
  .hidden {
    display: none
@@ -218,10 +230,7 @@
    nav {
      /*float: right;*/
    }
-   nav ul {
-
-   }
-
+   nav ul {}
    nav ul li {
      float: right;
      display: inline;
@@ -232,6 +241,7 @@
    nav li a {
      border: none;
      font-size: 1em;
+     padding: 20px
    }
    .burger-nav {
      display: none;
@@ -291,14 +301,14 @@
      line-height: 1.3em;
    }
  }
+ 
  @media screen and (min-width: 750px) {
    .projects div {
      width: 30%;
    }
  }
-
-
-   @media screen and (min-width: 1000px) {
+ 
+ @media screen and (min-width: 1000px) {
    .projects div {
      width: 22%;
    }
