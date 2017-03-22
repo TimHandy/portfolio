@@ -1,4 +1,13 @@
-const projects = [{
+const projects = [
+    {
+    title: 'Responsive CSS',
+    img: 'img/responsive.png',
+    url: 'https://timhandy.github.io/responsive-page-template/',
+    repo: 'https://github.com/TimHandy/responsive-page-template',
+    description: 'I cloned a responsive template design using my own HTML & CSS to resemble the original responsiveness',
+    technologies: ['CSS', 'HTML']
+  },
+  {
     title: 'HTML Template to React',
     img: 'img/template-to-react.png',
     url: '',
